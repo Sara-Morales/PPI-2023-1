@@ -22,7 +22,7 @@
 
 body{
     font-family: 'Space Grotesk', sans-serif;
-    background-color: #1f1f1f;
+    /*background-image: url(/img/fondo1.jpg);*/
 }
 
 .container {
@@ -31,11 +31,12 @@ body{
 }
 
 .header {
-    background-image: url(images/fondo1.jpg);
+    /*background-image: url(img/fondo1.jpg);*/
+    background-image: url(img/2.png);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 70vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
 }
@@ -49,7 +50,7 @@ body{
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    background-color: #1c1c1c;
+    background-color: #333333;
 }
 
 .menu .navbar ul li {
@@ -101,7 +102,7 @@ body{
 
     font-size: 100px;
     color: #fff;
-    text-shadow: 0 0 15px #060047, 0 0 10px #060047, 0 0 15px #fff, 0 0 20px #060047, 0 0 25px #060047;
+    text-shadow: 0 0 15px #660202, 0 0 10px #880303, 0 0 15px #0c28c7, 0 0 20px #060047, 0 0 25px #060047;
     -webkit-text-fill-color: #F4ECFF;
     -webkit-text-stroke-color:#650008;
     -webkit-text-stroke-width:0.2px; 
@@ -160,15 +161,15 @@ body{
 }
 
 .welcome-1 {
-    background-image: url(images/LogoElectroStar-fotor-bg-remover-2023041623200.png);
+    background-image: url(/img/LogoElectroStar-fotor-bg-remover-2023041623200.png);
     background-position: center center;
     background-repeat: no-repeat;
     width: 45%;
-    margin-left: 200px;
+    background-color: #1f1f1f;
 }
 
 .welcome-2 {
-    width: 50%;
+    width: 55%;
     padding: 100px 280px 0px 05px;
     background-color:#1f1f1f;
 }
@@ -177,6 +178,7 @@ h2 {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 50px;
     color: #fff;
+    text-align: center;
     text-shadow: 0 0 1px #650008, 0 0 1px #650008, 0 0 0px #fff, 0 0 10px #650008, 0 0 25px #650008;
     -webkit-text-fill-color: #F4ECFF;
     -webkit-text-stroke-color:#650008;
@@ -191,10 +193,136 @@ p {
     font-size: 20px;
     line-height: 2.0;
 }
-
+.boxesContainer{
+    display: flex;
+  justify-content: center;  
+}
+.cardBox {
+    float: left;
+    font-size: 1.2em;
+    margin: 1% 0 0 1%;
+    perspective: 800px;
+    transition: all 0.3s ease 0s;
+    width: 23.7%;
+}
+.cardBox:hover .card {
+    transform: rotateY(180deg);
+}
+.card {
+    background-image: url(/img/VideoJuegos.jpg);
+    cursor: default;
+    height: 435px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease 0s;
+    width: 100%;
+    -webkit-animation: giro 1s 1;
+    animation: giro 1s 1;
+}
+.front, .back {
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    font-size: 1.2em;
+    height: 100%;
+    padding: 2em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.back {
+    transform: rotateY( 180deg);
+}
+h1 {
+    color: #fff;
+    text-align: center;
+    margin: 0 0 5% 0;
+    padding: 0.5em;
+    margin: 0 0 5% 0;
+  }
+   
+  p {
+    margin-bottom: 1.8em;
+  }
+   
+  strong {
+    background: #fff;
+    border-radius: 100%;
+    color: #222;
+    font-size: 1.5em;
+    line-height: 30px;
+    padding: 0 7px 4px 6px;
+  }
+.cardBox:nth-child(1) .card .back {
+    background: rgb(39, 110, 241);
+  }
+   
+  .cardBox:nth-child(2) .card .back {
+    background: rgb(232, 151, 0);
+  }
+   
+  .cardBox:nth-child(3) .card .back {
+    background: #460096;
+  }
+   
+.cardBox:nth-child(2) .card {
+    -webkit-animation: giro 1.5s 1;
+    animation: giro 1.5s 1;
+  }
+   
+  .cardBox:nth-child(3) .card {
+    -webkit-animation: giro 2s 1;
+    animation: giro 2s 1;
+  }
+@keyframes giro {
+    from {
+      transform: rotateY( 180deg);
+    }
+    to {
+      transform: rotateY( 0deg);
+    }
+  }
+  
+  @-webkit-keyframes giro {
+    from {
+      transform: rotateY( 180deg);
+    }
+    to {
+      transform: rotateY( 0deg);
+    }
+}
+@media screen and (max-width: 767px) {
+  
+    .cardBox {
+      margin-left: 2.8%;
+      margin-top: 3%;
+      width: 46%;
+    }
+  
+    .card {
+      height: 285px;
+    }
+  
+    .cardBox:last-child {
+      margin-bottom: 3%;
+    }
+  
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+  
+    .cardBox {
+      width: 94.5%;
+      height: 290px;
+    }
+  
+}
 .services {
     padding: 60px 0;
     text-align: center;
+    height: 800px;
+    background: linear-gradient(      217deg,      #660202,      rgb(27 27 28) 70.71%    ), linear-gradient(127deg, rgb(116 106 255 / 80%), rgba(0, 255, 0, 0) 70.71%),    linear-gradient(336deg, rgb(5,2,38), rgba(0, 0, 255, 0) 70.71%)
 }
 
 .services-txt {
@@ -211,6 +339,7 @@ hr {
 
 .services-txt p {
     padding: 50px 150px;
+    
 }
 
 .services-group {
@@ -247,6 +376,7 @@ hr {
 .personal {
     padding: 8px 220px;
     text-align: center;
+    background-color: #1F1F1F;
 }
 
 .personal-txt {
@@ -288,7 +418,7 @@ hr {
 }
 
 .footer-bg {
-    background-image: url(images/2.png);
+    background-image: url(/img/2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -379,7 +509,7 @@ form {
 .registro{
     width: 100%;
     height: 700px;
-    background-image: url(images/fondo1.jpg); 
+    background-image: url(/img/VideoJuegos.jpg); 
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -412,7 +542,8 @@ form {
     padding: 11px 10px;
     background: #252323;
     font-size: 15px;
-    font-weight: bold;
+    letter-spacing: 0;
+    color: white;
 }
     
 .form-login p{
@@ -434,7 +565,7 @@ form {
 .login{
     width: 100%;
     height: 700px;
-    background-image: url(images/fondo1.jpg); 
+    background-image: url(/img/VideoJuegos.jpg); 
     background-size: cover;
     background-attachment: fixed;
     position: relative;
