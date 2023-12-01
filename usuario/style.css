@@ -141,7 +141,8 @@ header{
     border-radius: 25px;
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: flex-start;    
+
     position: fixed;
 }
 

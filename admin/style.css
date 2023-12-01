@@ -7,8 +7,9 @@
 
 body {
     font-family: 'Space Grotesk', sans-serif;
-    background-image: url(/img/VideoJuegos.jpg);
     padding-top: 80px;
+    background-color: #141C29;
+
 }
 
 h1 {
@@ -30,7 +31,6 @@ header {
     justify-content: center;
     gap: 15%;
     height: 70px;
-    background-color: #1C1C1C;
     width: 100%;
 }
 
@@ -48,7 +48,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-color: #1C1C1C;
+    background-color: #2D4263;
     height: 400px;
     width: 400px;
     border-radius: 20px;
