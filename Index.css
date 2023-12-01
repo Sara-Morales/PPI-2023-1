@@ -532,7 +532,8 @@ form {
 .registro{
     width: 100%;
     height: 700px;
-    background-image: url(/img/VideoJuegos.jpg); 
+    /*background-image: url(/img/VideoJuegos.jpg);*/
+    background-color: #000000; 
     background-size: cover;
     background-attachment: fixed;
     position: relative;
