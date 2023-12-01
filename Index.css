@@ -22,6 +22,7 @@
 
 body{
     font-family: 'Space Grotesk', sans-serif;
+    background-image: url(https://media.istockphoto.com/id/1479461495/es/vector/p%C3%ADxeles-de-color-de-falla-ruido-digital-futurista-se%C3%B1al-de-v%C3%ADdeo-distorsionada-efecto-de.jpg?b=1&s=612x612&w=0&k=20&c=n6Gu70Z5uS0aLrqO4GvVUC11p8l_jYIiYOfJzehoVYE=);
     /*background-image: url(/img/fondo1.jpg);*/
 }
 
@@ -120,8 +121,6 @@ body{
 }
 
 .btn-1 { 
-    display: flex;
-    justify-content: center;
     padding: 11px 25px;
     background-color:#650008;
     color: aliceblue;
@@ -133,7 +132,7 @@ body{
 }
 
 .btn-1:hover {
-    background-color: #060047; 
+    background-color: #ffffff; 
 }
 
 .header-dir {
@@ -253,18 +252,37 @@ h1 {
     line-height: 30px;
     padding: 0 7px 4px 6px;
   }
+   
+  a {
+    padding: 0.3em 0.5em;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 1px;
+    font-size: 0.9em;
+    transition: all 0.2s ease 0s;
+  }
+   
+  a:hover {
+    background: #fff;
+    color: #333;
+    text-shadow: 0 0 1px #333;
+}
 .cardBox:nth-child(1) .card .back {
-    background: rgb(39, 110, 241);
+    background: cornflowerblue;
   }
    
   .cardBox:nth-child(2) .card .back {
-    background: rgb(232, 151, 0);
+    background: orange;
   }
    
   .cardBox:nth-child(3) .card .back {
-    background: #460096;
+    background: yellowgreen;
   }
    
+  .cardBox:nth-child(4) .card .back {
+    background: tomato;
+}
 .cardBox:nth-child(2) .card {
     -webkit-animation: giro 1.5s 1;
     animation: giro 1.5s 1;
@@ -274,6 +292,11 @@ h1 {
     -webkit-animation: giro 2s 1;
     animation: giro 2s 1;
   }
+   
+  .cardBox:nth-child(4) .card {
+    -webkit-animation: giro 2.5s 1;
+    animation: giro 2.5s 1;
+}
 @keyframes giro {
     from {
       transform: rotateY( 180deg);
@@ -497,12 +520,12 @@ form {
 }
     
 .from-register a {
-    color: white;
+    color: rgb(90, 81, 81);
     text-decoration: none;
 }
     
 .from-register a:hover{
-    color: white;
+    color: rgb(142, 0, 0);
     text-decoration: underline;
 }
     
